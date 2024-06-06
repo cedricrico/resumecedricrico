@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+ background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesource/999FoundationIntroBackground.jpg);
+background-position: center;
+ background-size: cover;
+ position: relative;
+
+}
+
+nav{
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+list-style-type: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+
+
+}
+
+.nav-links ul li a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: purple;
+    display: block;
+    margin: auto;
+    transition: 1s;
+
+}
+
+.nav-links ul li:hover::after{
+width: 100%;
+
+}
+
+.text-box{
+ width: 90%;
+ color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+
+}
+
+.text-box h1{
+ font-size: 40px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20;
+    color: white;
+}
+
+.hero-btn{
+
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover{
+    border: 5px solid purple;
+    background: darkorchid;
+    transition: 1s  ;
+}
+
+nav .fa{
+   display: none;
+
+    
+    
+}
+
+
+@media(max-width:500px){
+    .text-box h1{
+        font-size: 15px;
+       }
+       .nav-links ul li{
+        display: block;
+       }
+       .nav-links{
+        position: absolute;
+        background: darkslateblue;
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+
+       }
+    nav .fa{
+        display: block;
+        color: whitesmoke;
+        margin-left: auto;
+        font-size: 30px;
+        
+
+    }
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+/*-----Introduction------*/
+
+.introduction{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+p{
+    color: #777;
+    font-size: 17px;
+    font-weight: 200px;
+    line-height: 15px;
+    padding: 10px;
+}
+
+
+.introduction-col{
+
+    flex-basis: 31%;
+    background: #fff3ff; 
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.introduction-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
+}
+
+
+
+/*---------purpose----------*/
+
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesource/999FoundationPurposeBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+.purpose-content{
+ width: 80%;
+ margin: auto;
+ padding-top: 80px;
+ padding-bottom: 50px;
+
+
+}
+
+.purpose-col{
+    flex-basis: 48%;
+    padding: 10px 2px;
+
+}
+.purpose-col img{
+    width: 100;
+}
+
+
+.purpose-col h1{
+    padding-top: 0;
+
+}
+
+.purpose-col-p{
+    padding: 15px 0px 25px;
+
+}
+
+.red-btn{
+border: 1px solid black;
+background: transparent;
+color: black;
+}
+
+
+/*-----Description-------*/
+
+.desc-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesource/bulihan.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+.desc-header h1{
+    margin-top: 100px;
+}
+
+
+.red-btn{
+border: 100px solid black;
+background: transparent;
+color: black;
+}
+
+
+
+
+.curtain{
+    margin-top: 100px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+
+
+
+.description-col{
+
+    flex-basis: 40%;
+    background-color: #fff3ff;
+    border-radius: 100px;
+    margin-bottom:5%;
+    padding: 10px 120px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 100px, 0;
+}
+
+
+.description-col p {
+    text-align: center;
+}
+
+.description-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
+}
+
+
+
+/*--------support-------*/
+
+.support-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imagesource/colloqium.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+.support-header h1{
+    margin-top: 100px;
+}
+
+
+
+
+.curtain{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+.support-col{
+
+    flex-basis: 31%;
+    background-color: #fff3ff;
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+.support-col p {
+    text-align: center;
+}
+
+.support-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0,0.2);
+ transition: 1s;
+}
+
+
+.credits{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+   
+   }
+   
+   .credits h3{
+    font-size: 40px;
+   }
+   
+   .text-box p{
+       margin: 10px 0 40px;
+       font-size: 20;
+       color: white;
+   }
+
